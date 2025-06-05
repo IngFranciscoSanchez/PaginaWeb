@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robótica Futurista</title>
+  <style>
+    /* --- Estilos base --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #121212;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00ffe7;
+    }
+
+    nav {
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffe7;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #00ffe7;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    ul li::before {
+      content: "🤖 ";
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 255, 231, 0.2);
+      margin-top: 20px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s, background-color 0.3s;
+      box-shadow: 0 0 10px rgba(0,255,231,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background-color: #2a2a2a;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #00ffe7;
+      color: #000;
+      padding: 10px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00c8b5;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Robótica Futurista</h1>
+    <p>Explora el mundo de la inteligencia artificial y las máquinas inteligentes</p>
+  </header>
+
+  <nav>
+    <a href="#introduccion">Inicio</a>
+    <a href="#aplicaciones">Aplicaciones</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="card">
+          <h3>Nombre: JHON JAIRO DURÁN</h3>
+          <h2>3ero Telematica</h2>
+    </div>
+    <section id="introduccion">
+      <h2>¿Qué es la Robótica?</h2>
+      <p>La robótica combina ingeniería, informática e inteligencia artificial para crear máquinas que ayudan a los humanos en diferentes tareas, desde la industria hasta la medicina.</p>
+      <img src="robot-futurista.png" alt="Futuro de la robótica">
+      
+    </section>
+
+    <section id="aplicaciones">
+      <h2>Aplicaciones en el Mundo Real</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Salud</h3>
+          <p>Robots quirúrgicos como Da Vinci permiten operaciones más precisas y menos invasivas.</p>
+        </div>
+        <div class="card">
+          <h3>Industria</h3>
+          <p>Brazos robóticos automatizan procesos de producción en fábricas alrededor del mundo.</p>
+        </div>
+        <div class="card">
+          <h3>Exploración</h3>
+          <p>Rovers como Perseverance están explorando Marte, enviando datos a la Tierra.</p>
+        </div>
+        <div class="card">
+          <h3>Educación</h3>
+          <p>Los kits de robótica enseñan a niños y jóvenes a programar desde temprana edad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos Destacados</h2>
+      <p>Aquí tienes algunos ejemplos de robótica que están marcando el futuro:</p>
+      <ul>
+        <li>Robot Atlas de Boston Dynamics: ágil y humanoide.</li>
+        <li>Sophia: robot con expresión facial y conversaciones naturales.</li>
+        <li>Robots sociales como Pepper en atención al cliente.</li>
+      </ul>
+      <a href="https://www.bostondynamics.com/" target="_blank" class="btn">Ver más proyectos</a>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes preguntas sobre el mundo de la robótica? ¡Escríbenos!</p>
+      <a href="" class="btn">Enviar correo</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Robótica Futurista. Hecho con 💡 y circuitos.
+  </footer>
+</body>
+</html>
